@@ -12,18 +12,18 @@ export type ProjectData = {
 export const PROJECTS: ProjectData[] = [
 	{
 		id: "platformer-roguelike",
-		title: "Platformer Roguelike (2025-present)",
+		title: "Arachnomechanica (2025-present)",
 		description: "A procedurally-generated 2D platformer game about creatures with complex emergent behavior.",
 		button: {
-			text: "View on GitHub",
-			url: "https://github.com/rclaytondev/platformer-roguelike"
+			text: "Play online",
+			url: "https://rclaytondev.github.io/platformer-roguelike"
 		},
 		lightBackground: false
 	},
 	{
 		id: "project-euler",
 		title: "Project Euler + Codewars (2020-present)",
-		description: "I have solved over 150 mathematical programming challenges from the website Project Euler.",
+		description: "I have solved over 150 mathematical programming challenges from the website Project Euler, placing me in the top 0.4% of users.",
 		button: {
 			text: "View on GitHub",
 			url: "https://github.com/rclaytondev/programming-challenges"
