@@ -35,10 +35,10 @@ a.play-button {
 	border: 3px solid rgb(0, 50, 150);
 }
 
-article:hover .background-image, .selected .background-image {
+.project:hover .background-image, .selected .background-image {
 	transform: scale(1.1);
 }
-article {
+.project {
 	overflow: hidden;
 }
 

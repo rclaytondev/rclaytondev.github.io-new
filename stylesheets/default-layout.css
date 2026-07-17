@@ -1,5 +1,5 @@
 @media only screen and (orientation: portrait) {
-	section {
+	#portfolio {
 		width: 90vw;
 		height: 90vw;
 
@@ -8,7 +8,7 @@
 	}
 }
 @media only screen and (orientation: landscape) {
-	section {
+	#portfolio {
 		width: 90vh;
 		height: 90vh;
 

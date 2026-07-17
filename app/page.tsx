@@ -2,6 +2,7 @@
 
 import { ProjectData, PROJECTS } from "./projects";
 
+import "../stylesheets/global.css";
 import "../stylesheets/click-effects.css";
 import "../stylesheets/scrollbar.css";
 import "../stylesheets/style.css";
@@ -20,7 +21,7 @@ type ProjectProps = ProjectData & {
 
 function Project({ id, title, description, button, selected, lightBackground, onClick }: ProjectProps) {
 	const imageStyle = { backgroundImage: `url(/${id}.png)` };
-	const containerClass = classNames({
+	const containerClass = classNames("project", {
 		"selected": selected,
 		"light-background": lightBackground
 	});
@@ -48,5 +49,8 @@ export default function Portfolio() {
 	const projects = PROJECTS.map(p => (
 		<Project {...p} key={p.id} selected={selectedID === p.id} onClick={() => handleClick(p.id)}/>
 	));
-	return (<section> {projects} </section>);
+
+	return (<div id="portfolio-container">
+		<section id="portfolio"> {projects} </section>
+	</div>);
 }
