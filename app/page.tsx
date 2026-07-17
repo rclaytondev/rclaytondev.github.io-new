@@ -19,8 +19,8 @@ type ProjectProps = ProjectData & {
 	lightBackground: boolean
 };
 
-function Project({ id, title, description, button, selected, lightBackground, onClick }: ProjectProps) {
-	const imageStyle = { backgroundImage: `url(/${id}.png)` };
+function Project({ id, title, description, button, selected, lightBackground, image, onClick }: ProjectProps) {
+	const imageStyle = { backgroundImage: `url(${image.src})` };
 	const containerClass = classNames("project", {
 		"selected": selected,
 		"light-background": lightBackground
