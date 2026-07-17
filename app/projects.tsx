@@ -5,7 +5,8 @@ export type ProjectData = {
 	button: {
 		text: string,
 		url: string
-	}
+	},
+	lightBackground: boolean
 }
 
 export const PROJECTS: ProjectData[] = [
@@ -16,7 +17,8 @@ export const PROJECTS: ProjectData[] = [
 		button: {
 			text: "View on GitHub",
 			url: "https://github.com/rclaytondev/platformer-roguelike"
-		}
+		},
+		lightBackground: false
 	},
 	{
 		id: "project-euler",
@@ -25,7 +27,8 @@ export const PROJECTS: ProjectData[] = [
 		button: {
 			text: "View on GitHub",
 			url: "https://github.com/rclaytondev/programming-challenges"
-		}
+		},
+		lightBackground: false
 	},
 	{
 		id: "physics-simulation",
@@ -34,7 +37,8 @@ export const PROJECTS: ProjectData[] = [
 		button: {
 			text: "View on GitHub",
 			url: "https://github.com/rclaytondev/physics-simulation"
-		}
+		},
+		lightBackground: true
 	},
 	{
 		id: "math-editor",
@@ -43,7 +47,8 @@ export const PROJECTS: ProjectData[] = [
 		button: {
 			text: "View on GitHub",
 			url: "https://github.com/rclaytondev/math-editor"
-		}
+		},
+		lightBackground: true
 	},
 	{
 		id: "random-survival-game",
@@ -52,7 +57,8 @@ export const PROJECTS: ProjectData[] = [
 		button: {
 			text: "Play online",
 			url: "https://rclaytondev.github.io/random-survival-game"
-		}
+		},
+		lightBackground: true
 	},
 	{
 		id: "stick-dungeon",
@@ -61,7 +67,8 @@ export const PROJECTS: ProjectData[] = [
 		button: {
 			text: "Play online",
 			url: "https://rclaytondev.github.io/stick-dungeon"
-		}
+		},
+		lightBackground: false
 	},
 	{
 		id: "hypocube-translocation",
@@ -70,7 +77,8 @@ export const PROJECTS: ProjectData[] = [
 		button: {
 			text: "View on GitHub",
 			url: "https://github.com/rclaytondev/hypocube-translocation#hypocube-translocation"
-		}
+		},
+		lightBackground: true
 	},
 	{
 		id: "raycaster",
@@ -79,6 +87,7 @@ export const PROJECTS: ProjectData[] = [
 		button: {
 			text: "View on GitHub",
 			url: "https://github.com/rclaytondev/raycaster"
-		}
+		},
+		lightBackground: false
 	},
 ];

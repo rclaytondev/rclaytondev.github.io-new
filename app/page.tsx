@@ -9,21 +9,29 @@ import "../stylesheets/style.css";
 import "../stylesheets/default-layout.css";
 import "../stylesheets/wide-layout.css";
 import { useState } from "react";
+import classNames from "classnames";
 
 
 type ProjectProps = ProjectData & {
 	selected: boolean,
-	onClick: () => void
+	onClick: () => void,
+	lightBackground: boolean
 };
 
-function Project({ id, title, description, button, selected, onClick }: ProjectProps) {
+function Project({ id, title, description, button, selected, lightBackground, onClick }: ProjectProps) {
 	const imageStyle = { backgroundImage: `url(/${id}.png)` };
+	const containerClass = classNames({
+		"selected": selected,
+		"light-background": lightBackground
+	});
 	return (
-		<article id={id} onClick={onClick} className={selected ? "selected" : ""}>
+		<article id={id} onClick={onClick} className={containerClass}>
 			<div className="background-image" style={imageStyle}></div>
 			<div className="project-link">
 				<div className="project-text">
 					<p className="project-description-title">{title}</p>
+					<p className="project-description">{description}</p>
+					<a href={button.url} target="_blank" className="play-button">{button.text}</a>
 				</div>
 			</div>
 		</article>
